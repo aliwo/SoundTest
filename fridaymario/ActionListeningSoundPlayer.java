@@ -167,7 +167,7 @@ public class ActionListeningSoundPlayer implements
 		result.put("EditorStartNewLineBefore", sounds.fireball);
 		result.put("EditorStartNewLine", sounds.fireball);
 		result.put("EditorDuplicate", sounds.fireball);
-		result.put("EditorBackSpace", sounds.breakblock);
+		//result.put("EditorBackSpace", sounds.breakblock);
 		result.put("EditorJoinLines", sounds.breakblock);
 		result.put("EditorDelete", sounds.breakblock);
 		result.put("EditorDeleteLine", sounds.breakblock);

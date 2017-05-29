@@ -36,7 +36,8 @@ public class Sounds {
 		});
 	}
 
-	public static Sounds createSilent(final SilentSound.Listener listener) {
+	public static Sounds createSilent(final SilentSound.Listener listener)
+	{
 		return new Sounds(new Function<Config, Sound>() {
 			@Override public Sound fun(Config config) {
 				return new SilentSound(loadBytes(config.filePath), config.filePath, listener);
@@ -44,7 +45,8 @@ public class Sounds {
 		});
 	}
 
-	private Sounds(Function<Config, Sound> load) {
+	private Sounds(Function<Config, Sound> load)
+	{
 		oneUp = load.fun(new Config("/fridaymario/sounds/smb_1-up.au"));
 		oneDown = load.fun(new Config("/fridaymario/sounds/smb_pipe.au"));
 		coin = load.fun(new Config("/fridaymario/sounds/smb_coin.au"));
